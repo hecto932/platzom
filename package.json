@@ -2,9 +2,9 @@
   "name": "platzom",
   "version": "0.1.0",
   "description": "Traductor de idioma platzom",
-  "main": "index.js",
+  "main": "dist/src/platzom.js",
   "scripts": {
-    
+    "build": "babel src/platzom.js -d dist"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,9 @@
     "js"
   ],
   "author": "Hector Flores <hecto932@gmail.com> (https://twitter.com/hecto932)",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.4.0"
+  }
 }
