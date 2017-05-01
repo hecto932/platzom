@@ -1,0 +1,119 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'publish',
+1 verbose cli   '--access=public' ]
+2 info using npm@3.10.10
+3 info using node@v6.10.2
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/hector/Platzi/platzom',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/hector/.npm/@username/platzom/0.1.0/package.tgz not in flight; packing
+9 verbose correctMkdir /home/hector/.npm correctMkdir not in flight; initializing
+10 info lifecycle @username/platzom@0.1.0~prepublish: @username/platzom@0.1.0
+11 silly lifecycle @username/platzom@0.1.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/home/hector/.npm/@username/platzom/0.1.0/package.tgz',
+12 verbose tar pack   '/home/hector/Platzi/platzom' ]
+13 verbose tarball /home/hector/.npm/@username/platzom/0.1.0/package.tgz
+14 verbose folder /home/hector/Platzi/platzom
+15 verbose addLocalTarball adding from inside cache /home/hector/.npm/@username/platzom/0.1.0/package.tgz
+16 verbose correctMkdir /home/hector/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd @username/platzom@0.1.0
+18 verbose afterAdd /home/hector/.npm/@username/platzom/0.1.0/package/package.json not in flight; writing
+19 verbose correctMkdir /home/hector/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /home/hector/.npm/@username/platzom/0.1.0/package/package.json written
+21 silly publish { name: '@username/platzom',
+21 silly publish   version: '0.1.0',
+21 silly publish   description: 'Traductor de idioma platzom',
+21 silly publish   main: 'dist/src/platzom.js',
+21 silly publish   scripts: { build: 'babel src/platzom.js -d dist', test: 'mocha' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/hecto932/platzom.git' },
+21 silly publish   keywords: [ 'platzom', 'platzi', 'fundamentos', 'javascript', 'js' ],
+21 silly publish   author:
+21 silly publish    { name: 'Hector Flores',
+21 silly publish      email: 'hecto932@gmail.com',
+21 silly publish      url: 'https://twitter.com/hecto932' },
+21 silly publish   license: 'MIT',
+21 silly publish   devDependencies:
+21 silly publish    { 'babel-cli': '^6.24.1',
+21 silly publish      'babel-preset-env': '^1.4.0',
+21 silly publish      chai: '^3.5.0',
+21 silly publish      mocha: '^3.3.0' },
+21 silly publish   readme: '# Platzom\n\nPlatzom es un idioma inventado para el [curso de fundamentos de javascript](htttps://platzi.com/js) de [Platzi](https://platzi.com).\n\n## Descripción del idioma\n\n- Si la palabra termina con "ar", se le quitan esas dos letras.\n- Si la palabra inicia con Z, se le añade "pe" al final.\n- Si la palabra traducida tiene 10 o mas letras, se le debe partir en dos por la mitad y unir con un guion medio.\n- Por último, si la palabra original es un palíndromo, ninguna regla anterior cuenta y se le devuelve la misma palabra pero intercalando letras mayusculas y minusculas\n\n## Instalación\n\n```\nnpm install platzom\n```\n\n## Uso\n```\nimport platzom from \'platzom\'\n\nplatzom(\'programar\') // Program\nplatzom(\'Zorro\') // Zorrope\nplatzom(\'Zarpar\') // Zarppe\nplatzom(\'abecedario\') // abece-dario\nplatzom(\'sometemos\') // SoMeTeMoS\n```\n\n## Créditos\n\n- [Hector Flores](https://twitter.com/@hecto932)\n\n## Licencia\n\n[MIT](https://opensource.org/licenses/MIT)',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: 'cd15aadc968bf2be7b7447f7e6756df94efda5b5',
+21 silly publish   bugs: { url: 'https://github.com/hecto932/platzom/issues' },
+21 silly publish   homepage: 'https://github.com/hecto932/platzom#readme',
+21 silly publish   _id: '@username/platzom@0.1.0',
+21 silly publish   _shasum: '7765be399b13d9ba79ab80083fc8fba2381aeb94',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name @username/platzom
+24 silly mapToRegistry scope (from package name) @username
+25 verbose mapToRegistry no registry URL found in name for scope @username
+26 silly mapToRegistry using default registry
+27 silly mapToRegistry registry https://registry.npmjs.org/
+28 silly mapToRegistry data Result {
+28 silly mapToRegistry   raw: '@username/platzom',
+28 silly mapToRegistry   scope: '@username',
+28 silly mapToRegistry   escapedName: '@username%2fplatzom',
+28 silly mapToRegistry   name: '@username/platzom',
+28 silly mapToRegistry   rawSpec: '',
+28 silly mapToRegistry   spec: 'latest',
+28 silly mapToRegistry   type: 'tag' }
+29 silly mapToRegistry uri https://registry.npmjs.org/@username%2fplatzom
+30 verbose publish registryBase https://registry.npmjs.org/
+31 silly publish uploading /home/hector/.npm/@username/platzom/0.1.0/package.tgz
+32 verbose request uri https://registry.npmjs.org/@username%2fplatzom
+33 verbose request sending authorization for write operation
+34 info attempt registry request try #1 at 1:58:23 PM
+35 verbose request using bearer token for auth
+36 verbose request id 0c854d9589692178
+37 http request PUT https://registry.npmjs.org/@username%2fplatzom
+38 http 403 https://registry.npmjs.org/@username%2fplatzom
+39 verbose headers { 'content-type': 'application/json',
+39 verbose headers   'cache-control': 'max-age=0',
+39 verbose headers   'content-length': '21',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   date: 'Mon, 01 May 2017 18:58:24 GMT',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   connection: 'keep-alive',
+39 verbose headers   'x-served-by': 'cache-lax8620-LAX',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1493665104.970597,VS0,VE276' }
+40 verbose request invalidating /home/hector/.npm/registry.npmjs.org/_40username_252fplatzom on PUT
+41 error publish Failed PUT 403
+42 verbose stack Error: Forbidden : @username/platzom
+42 verbose stack     at makeError (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+42 verbose stack     at CachingRegistryClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+42 verbose stack     at Request._callback (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+42 verbose stack     at Request.self.callback (/usr/lib/node_modules/npm/node_modules/request/request.js:187:22)
+42 verbose stack     at emitTwo (events.js:106:13)
+42 verbose stack     at Request.emit (events.js:191:7)
+42 verbose stack     at Request.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:1048:10)
+42 verbose stack     at emitOne (events.js:96:13)
+42 verbose stack     at Request.emit (events.js:188:7)
+42 verbose stack     at IncomingMessage.<anonymous> (/usr/lib/node_modules/npm/node_modules/request/request.js:969:12)
+43 verbose statusCode 403
+44 verbose pkgid @username/platzom
+45 verbose cwd /home/hector/Platzi/platzom
+46 error Linux 4.8.0-49-generic
+47 error argv "/usr/bin/nodejs" "/usr/bin/npm" "publish" "--access=public"
+48 error node v6.10.2
+49 error npm  v3.10.10
+50 error code E403
+51 error Forbidden : @username/platzom
+52 error If you need help, you may report this error at:
+52 error     <https://github.com/npm/npm/issues>
+53 verbose exit [ 1, true ]
